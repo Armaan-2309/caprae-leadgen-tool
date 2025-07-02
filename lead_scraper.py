@@ -2,7 +2,7 @@
 
 import requests
 
-SERPAPI_API_KEY = "0c94490082bdd0d3a3d9c92494d2f4cb13e61a60eab9c74beed23c6489bb16c4"
+SERPAPI_API_KEY = "ENTER YOUR API KEY"
 
 def search_linkedin_profiles(company, role, num_results=3):
     query = f'site:linkedin.com/in "{role}" "{company}"'
