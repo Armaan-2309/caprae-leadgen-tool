@@ -2,7 +2,11 @@
 
 import requests
 
-SERPAPI_API_KEY = "ENTER YOUR API KEY"
+import os
+from dotenv import load_dotenv
+
+load_dotenv() 
+SERPAPI_API_KEY = os.getenv("SERPAPI_API_KEY")
 
 def search_linkedin_profiles(company, role, num_results=3):
     query = f'site:linkedin.com/in "{role}" "{company}"'
